@@ -1,0 +1,27 @@
+{
+    "listName":"Cars",
+    "city":"Lima",
+    "course":"cit261",
+    "Brands":[
+        {"name":"Audi",
+         "model":"A1",
+         "maxSpeed":"179 km/h",
+         "country":"Germany"
+        },
+        {"name":"BMW",
+         "model":"X3",
+         "maxSpeed":"200 km/h",
+         "country":"Germany"
+        },
+        {"name":"Subaru",
+         "model":"Forester",
+         "maxSpeed":"210",
+         "country":"Japan"
+        },
+        {"name":"Alfa Romeo",
+         "model":"Stelvio",
+         "maxSpeed":"250 km/h",
+         "country":"Italy"
+        }  
+    ] 
+}
