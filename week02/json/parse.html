@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Create Object from JSON String</h2>
+
+<h3 id="title"></h3>    
+<p id="data"></p>
+
+<h2>Using JSON.parse() to convert a string into a function</h2>
+<p id="funct"></p>
+
+<script>
+    var txt = '{"name":"Nimrod", "lastName":"Huaira", "age":25, "city":"Lima"}'
+    var obj = JSON.parse(txt);
+    //title    
+    document.getElementById("title").innerHTML = obj.name + " " + obj.lastName;
+    //body
+    document.getElementById("data").innerHTML = obj.city + ", " + obj.age+" years";
+
+  //function with parse()  
+    var text = '{"name":"Max", "age":"function() {return 25;}"}';
+    //definition
+    var obj = JSON.parse(text);
+    obj.age = eval("(" + obj.age + ")");
+    //paragraph
+    document.getElementById("funct").innerHTML = obj.name + " is " + obj.age()+ " years old";
+
+    
+</script>
+
+</body>
+</html>

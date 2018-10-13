@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <header>
+        <h1>JSON.stringfy()</h1>
+    </header>
+    <main>
+        <p>We can convert a JavaScript object into a string with JSON.stringfy()</p>
+        <h3>Create JSON string from a JavaScript object.</h3>
+            <p>Data in JSON  must be written in name/values pairs and in double quotes ("name":"Max") but in JS you can write string values in double or simple quotes (name:'max')</p>
+            <ul >
+                <li id="string1"></li>
+            </ul>
+        
+        
+            <h3>Create JSON string from an array.</h3>
+            <ul >
+                <li id="array1"></li>
+            </ul>
+    </main>
+    <footer>
+        <script>
+            var obj = { name: "Nimrod", age: 25, hobby: "play videogames" };
+            var myJSON = JSON.stringify(obj);
+            //showing the string
+            document.getElementById("string1").innerHTML = myJSON;
+            
+
+            var arr = [ "Lima", "Huancavelica", "Santiago", "Montevideo" ];
+            var myJSON = JSON.stringify(arr);
+            document.getElementById("array1").innerHTML = myJSON;
+
+        </script>
+    </footer>
+
+</body>
+</html>
