@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Objects</title>
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+      <main>
+          <section>
+                <h2>JavaScript Objects </h2>
+                  <ol>
+                        <li> Create a new object called "member" </li>
+                        <li> Set a name, last Name, age, favorite color, and ward. </li>
+                        <li>Define a Object Method to show the Full name</li>
+                        <li>Show the member object </li>
+                  </ol>
+                  <!--the object goes here!!-->
+                  <blockquote>
+                    <h2 id="name"></h2>
+                      <p id="info"> </p>
+                  </blockquote>
+            </section>
+          
+          <section>
+            <h2>Concepts example </h2>
+              
+            <p> Every object can be used as a prototype for another object.</p>
+            <ol>
+                        <li> Define a constructor Person() and a its properties, define a sayHi() function  </li>
+                        <li> Define a constructor Worker() and inherit Person() properties </li>
+                        <li>Redefine sayHi() method Method, and add a new "sayGoodbye()" function </li>
+                        <li>create an instance and test it</li>
+                  </ol>
+                  
+             <!--example goes here!!-->     
+            <blockquote>    
+                <a href="inheritance.html" target="_blank">pop up example</a>
+                  
+              </blockquote>
+          </section>
+          
+          
+          
+      </main>        
+      <footer>
+        <p>&copy;2018 Nimrod Huaira | CIT 261  | BYU-Idaho</p>
+        <!-- scripts!!!-->
+        <script>
+
+            // Create an object:
+                var member = {
+                    firstName : "Keyla",
+                    lastName  : "Rosales",
+                    age       : 22,
+                    favColor  : "scarlet",
+                    fullName : function(){
+                        return this.firstName +" "+ this.lastName;
+                        }
+                };
+
+            // Display data from the object:
+                document.getElementById("name").innerHTML =
+                member.fullName();
+                document.getElementById("info").innerHTML =
+                member.firstName + " is " + member.age + " years old and her favourite color is " + member.favColor +".";
+
+          </script>
+        
+      </footer>
+
+  </body>
+</html>
