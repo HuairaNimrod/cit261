@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+          <title>CIT 261 | HTML TAG</title>
+          <meta charset="utf-8"/>
+         
+    </head>
+    <body>
+        
+        <header>
+            
+            <h1>HTML TAGS</h1>
+          
+        </header>
+        
+        <main>
+            <h3>Canvas </h3>
+                <canvas id="myCanvas" width="400" height="70"
+                style="border:1px solid #d3d3d3;">
+                </canvas>
+            <h3>Video Tag</h3>
+                <video width="240" height="160" controls>
+                    <source src="https://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+                </video>
+
+                <p>Embed a video in a web page with "iframe" tag</p>
+
+               <iframe width="240" height="160" src="https://www.youtube.com/embed/7PDUO3l8xiM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            
+            <h3>Audio Tag</h3>
+            <audio controls>
+
+              <source src="nephi01.mp3" type="audio/mpeg">
+
+            </audio>
+            
+        </main>
+        
+        <footer>
+            
+    
+             <p>&copy;2018 Nimrod Huaira | CIT 261  | BYU-Idaho</p>
+            
+                <script>
+               var canvas = document.getElementById("myCanvas");
+                    var ctx = canvas.getContext("2d");
+                    ctx.font = "10px Georgio";
+                    ctx.fillText("<canvas> element is used to draw graphics on a web page via scripting ",10,40);
+                </script>        
+                
+                
+        </footer>
+        
+    </body>
+</html>
+
