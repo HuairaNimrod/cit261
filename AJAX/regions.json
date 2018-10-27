@@ -1,4 +1,4 @@
-[{"id":"010000","name":"Amazonas","capital":null  }, 
+{"region":[{"id":"010000","name":"Amazonas","capital":null  }, 
  {"id":"020000","name":"Ancash","capital":null  }, 
  {"id":"030000","name":"Apurimac","capital":null  }, 
  {"id":"040000","name":"Arequipa","capital":null  }, 
@@ -22,4 +22,4 @@
  {"id":"220000","name":"San Martin","capital":null  }, 
  {"id":"230000","name":"Tacna","capital":null  }, 
  {"id":"240000","name":"Tumbes","capital":null  }, 
- {"id":"250000","name":"Ucayali","capital":null  }]
+ {"id":"250000","name":"Ucayali","capital":null  }]}
