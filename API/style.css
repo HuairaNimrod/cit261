@@ -1,0 +1,23 @@
+img{
+    height: 20px;
+    width: auto;
+}
+p{
+    margin: 5px;
+}
+
+div{
+    background-color: darkgray;
+    border: 1px solid;
+    padding: 5px;
+
+}
+#inputCountry{
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: none;
+}
+
+h1{
+    color: #33658A;
+}

@@ -15,19 +15,90 @@
         </header>
         
         <main>
-           
-            
+                <button onclick="myFunction()">Click Me to SHow the regions</button>
+                <blockquote>
+                 <section id="regions">     </section>
+                </blockquote>
+
         </main>
         
         <footer>
             
     
              <p>&copy;2018 Nimrod Huaira | CIT 261  | BYU-Idaho</p>
-                  
+            
+                <script>
+
+                var section = document.querySelector('section');
+
+                /*----Obtaining the JSON-----*/
+
+                var requestURL = 'https://huairanimrod.github.io/cit261/AJAX/regions.json';
+                var request = new XMLHttpRequest();
+                request.open('GET', requestURL);
+                request.responseType = 'json';
+                request.send();
+                request.onload = function() {
+                      var Region = request.response;
+                      /*populateHeader(Region);*/
+                      showBrands(Region);
+                    }
+                /*-----Populating the Header-----
+
+                function populateHeader(jsonObj) {
+                      var myH1 = document.createElement('h4');
+                      myH1.textContent = jsonObj['name'];
+                      header.appendChild(myH1);
+
+                      
+                    }*/
+                /*-----Region Information----*/
+
+                function showBrands(jsonObj) {
+                    
+                    
+                      var brand = jsonObj['region'];
+
+                      for (var i = 0; i < brand.length; i++) {
+                        var myArticle = document.createElement('article');
+                        var myH2 = document.createElement('h2');
+                        var myPara1 = document.createElement('p');
+                        var myPara2 = document.createElement('p');
+                        
+
+
+                        myH2.textContent = brand[i].name;
+                        myPara1.textContent = 'Capital: ' + brand[i].capital;
+                        myPara2.textContent = 'Zip: ' + brand[i].id;
+
+
+                        myArticle.appendChild(myH2); 
+                        myArticle.appendChild(myPara1);
+                        myArticle.appendChild(myPara2);
+                        
+
+                        section.appendChild(myArticle);
+                      }
+                    }
+                    
+                  </script>
                 
+                    <script>
+                        function myFunction() {
+                            var x = document.getElementById("regions");
+                            if (x.style.display === "none") {
+                                x.style.display = "block";
+                            } else {
+                                x.style.display = "none";
+                            }
+                        }
+                    </script>
                 
         </footer>
         
     </body>
 </html>
 
+
+
+<!--https://huairanimrod.github.io/cit261/AJAX/regions.json-->
