@@ -13,8 +13,11 @@
             <h3 id="tit3">Asynchronous JavaScript And XML</h3>
             <p>The keystone of AJAX is the XMLHttpRequest object.</p>
         </header>
+
         
         <main>
+           
+            
                 <button onclick="myFunction()">Click Me to SHow the regions</button>
                 <blockquote>
                  <section id="regions">     </section>
@@ -22,10 +25,11 @@
 
         </main>
         
-        <footer id="footer">
+        <footer>
             
     
-             <p id="footer_p">&copy;2018 Nimrod Huaira | CIT 261  | BYU-Idaho</p>
+             <p>&copy;2018 Nimrod Huaira | CIT 261  | BYU-Idaho</p>
+                  
             
                 <script>
 
@@ -61,7 +65,6 @@
 
                       for (var i = 0; i < brand.length; i++) {
                         var myArticle = document.createElement('article');
-                         
                         var myH2 = document.createElement('h2');
                         var myPara1 = document.createElement('p');
                         var myPara2 = document.createElement('p');
@@ -78,9 +81,7 @@
                         myArticle.appendChild(myPara2);
                         
 
-
                         section.appendChild(myArticle);
-
                       }
                     }
                     
@@ -96,7 +97,6 @@
                             }
                         }
                     </script>
-                    <script type="text/javascript" src="manipulatingCSS.js"> </script>
                 
         </footer>
         
