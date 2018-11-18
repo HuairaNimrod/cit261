@@ -1,0 +1,28 @@
+a {
+        transition: 1s;
+}
+a:link, a:visited {
+        color:  #114B5F;
+}
+a:hover {
+        color: #F0C808;
+}
+body{
+    background: #F0C808;
+}
+#myDIV{
+    padding: 15px;
+}
+#myDIV{
+
+    transition: 5s steps(5);
+}
+.change {
+    background: #114B5F;
+    color: aliceblue;
+
+}
+
+main{
+    margin:10px;
+}

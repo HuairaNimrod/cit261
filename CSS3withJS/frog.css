@@ -1,0 +1,26 @@
+
+
+@keyframes pulse {
+  from {
+
+    transform: scale(0.8);
+    opacity: .8;
+  }
+  to {
+
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+.svgwrap {
+  padding: 1em;
+}
+
+.pulse svg {
+
+  animation: pulse 1500ms infinite;
+}
+
+
