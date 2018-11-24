@@ -9,7 +9,7 @@
     <main>
         <div class="section one">
             <h3>OnClick Example</h3>
-            <p>Click the button to wait 3 seconds, then alert "Hello".</p>
+            <p>Click the button to wait 2 seconds, then alert "Hello".</p>
             <button onclick="myFunction()">Try it</button>
         </div>
         
@@ -19,12 +19,25 @@
             <button id="btn">Stop</button> 
         </div>
         
+
+                <div class="section three">
+                    <h3>Touch Event( for touch screen only)</h3>
+                    <figure>
+                      <img id="touchAndroid" src="images/android.png" alt="Android Logo" >
+                      <figcaption id="androidCaption">touch the image</figcaption>
+                    </figure>
+                </div>
+        
+        
     </main>
     
     <footer>
+            <p>&copy;Nimrod Huaira | CIT 261  | BYU-Idaho | <span id="jsDate"></span> </p>
+            <script type="text/javascript" src="date.js"></script>
             <script src="setTime.js" type="text/javascript"></script>
             <script src="refresh.js" type="text/javascript"></script>
             <script src="conter.js" type="text/javascript"></script>
+            <script type="text/javascript" src="touchStart.js"></script>
     </footer>
 
 </body>

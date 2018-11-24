@@ -1,7 +1,6 @@
 function myFunction() {
 
     
-    setInterval(function(){ alert("Hello");},2000);
+    setTimeout(function(){ alert("Hello");},2000);
 }
-
 
