@@ -1,5 +1,5 @@
 
-document.getElementById("touchAndroid").onTouch = myFunction;
+document.getElementById("touchAndroid").ontouchstart = myFunction;
 
 function myFunction() {
     
