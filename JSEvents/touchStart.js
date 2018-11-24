@@ -1,7 +1,7 @@
 
-document.getElementById("touchAndroid").ontouchstart = myFunction;
+document.getElementById("touchAndroid").ontouchstart = touchMe;
 
-function myFunction() {
+function touchMe() {
     
    
     var original = document.getElementById("touchAndroid");
