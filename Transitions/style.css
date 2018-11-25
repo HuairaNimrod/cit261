@@ -1,0 +1,90 @@
+h1,h2,h3,h4{
+    color: #fff;
+}
+
+
+body{
+    background: #33658A;
+}
+div{
+   margin: 20px; 
+}
+
+
+.section{
+    padding: 10px;
+
+    border-radius: 5px;
+}
+
+/*--------------------1st--------------------*/
+.one{
+    font-size: 10px;
+    background:#E39774;
+    width: 80px;
+    height: 80px;
+    transition: width 3s, background 4s, height 5s, font-size 3s;
+}
+.one p{
+    text-align: center
+}
+.one:hover{
+    font-size: 30px;
+    background: #EF476F;
+    width: 180px;
+    height: 180px;
+}
+/*--------------------2nd--------------------*/
+.two{
+    background: #D15A56;
+}
+.section{
+        color: #FCFCFC;
+}
+
+.box {
+
+  height: 20px;
+  width: 50px;
+  background-color: #FFD166;
+  transition: width 1s linear;
+}
+        .ease {
+          transition-timing-function: ease;
+        }    
+        .ease-out {
+          transition-timing-function: ease-out;
+        }
+
+        .ease-in {
+          transition-timing-function: ease-in;
+        }
+
+        .ease-in-out {
+          transition-timing-function: ease-in-out;
+        }
+        
+.box:hover {
+  width: 400px;
+}
+
+/*--------------------3th--------------------*/
+.three{
+    background: #F1BF65;
+}
+
+.shape{
+
+    background:#484349;
+    width: 80px;
+    height: 80px;
+    transition: width 3s, background 1s, height 5s;
+}
+.shape:hover{
+    width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #EE5622;
+        background: #F1BF65;
+}
