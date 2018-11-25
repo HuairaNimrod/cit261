@@ -1,0 +1,99 @@
+h1,h2,h3,h4{
+    color: #000;
+}
+
+
+body{
+    background: #33658A;
+}
+div{
+   margin: 20px; 
+}
+
+.section{
+    padding: 10px;
+
+    border-radius: 5px;
+}
+
+
+/*--------------------1st--------------------*/
+.one{
+
+     background: #7DBBC3;
+}
+#simpleAnimation{
+    width: 100px;
+    height: 100px;
+    background-color: #DE6B48;
+    border-radius: 15px;
+    animation-name: animationOne;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+}
+@keyframes animationOne {
+    0% {background-color: #DE6B48;}
+    25% {background-color: #F4B9B2;}
+    50% {background-color: #DAEDBD;}
+    
+}
+
+/*--------------------2nd--------------------*/
+.two{
+    background: #D15A56;
+}
+
+#animation2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #50AB77;
+    position: relative;
+    animation-name: animationTwo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animationTwo {
+    0% {left:0px; top: 0px;}
+    15% {left: 150px; top: 0px;}
+    30% {left: 300px; top: 0px;}
+    45% {left: 450px; top: 0px;}
+    60% {left: 300px; top: 0px;}
+    75% {left: 150px; top: 0px;}
+    100% {left:0px; top: 0px;}
+}
+
+/*--------------------3th--------------------*/
+.three{
+    background: #fff;
+    height: 200px;
+}
+
+#animation3 img{
+
+
+}
+
+#animation3{
+
+    position: relative;
+    animation-name: animationTW;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animationTW {
+    0% {left:0px; top: 0px;}
+    10% {left: 20px; top: 0px;}
+    20% {left: 40px; top: 0px;}
+    30% {left: 60px; top: 0px;}
+    40% {left: 60px; top: 40px;}
+    50% {left: 60px; top: 80px;}
+    60% {left:40px; top: 80px;}
+    70% {left:20px; top: 80px;}
+    80% {left:0px; top: 80px;}
+    90% {left:0px; top: 40px;}
+    100%{left:0px; top: 0px;}
+}
