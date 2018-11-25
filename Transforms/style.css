@@ -1,0 +1,74 @@
+h1,h2,h3,h4{
+    color: #000;
+}
+
+
+body{
+    background: #33658A;
+}
+div{
+   margin: 20px; 
+}
+
+img{
+    height: 60px;
+    width: auto:
+}
+.section{
+    padding: 10px;
+
+    border-radius: 5px;
+}
+
+.trans{
+    margin: 30px;
+    background: #009FB7;
+    color: #264A65;
+}
+/*--------------------1st--------------------*/
+.one{
+
+     background: #F1BF65;
+}
+
+div.simple1{
+    width: 80px;
+    height: 80px;
+    transform: rotate(20deg);
+}
+div.simple2{
+    width: 80px;
+    height: 80px;
+
+    transform: skewX(15deg) rotate(60deg) translate(200px,-200px);
+}
+div.simple3{
+    
+    width: 80px;
+    height: 80px;
+    transform: translate(500px,-200px);
+}
+
+/*--------------------2nd--------------------*/
+.two{
+    background: #D15A56;
+}
+
+.d3D-1{
+    width: 80px;
+    height: 80px;
+    transform: rotateY(50deg);
+}
+
+.d3D-2{
+    width: 80px;
+    height: 80px;
+    transform: rotate3d(100,150,130,200deg);
+}
+
+.d3D-3{
+    width: 80px;
+    height: 80px;
+    transform: scale3d(1.5,1.5,3);
+}
+
