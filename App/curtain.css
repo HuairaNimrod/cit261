@@ -1,0 +1,87 @@
+/*
+base : #247BA0
+second: #F2691A
+*/
+
+
+.curtain {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; }
+
+.curtain_wrapper {
+  width: 100%;
+  height: 100%; }
+
+.curtain_panel {
+
+  width: 50%;
+  height: 100vh;
+  float: left;
+  position: relative;
+  z-index: 2; }
+
+.curtain_welcome {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%; }
+
+/*---------------------checkbox--------------*/
+input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  opacity: 0; }
+
+/*---------------------curtain appears--------------*/
+input[type=checkbox]:checked ~ div.curtain_left {
+  transform: translateX(0); }
+
+/* Slide the second panel in */
+input[type=checkbox]:checked ~ div.curtain_right {
+  transform: translateX(0); }
+
+/* Slide the panel to the left out of the container */
+.curtain_left {
+    color: #fff;
+    text-align:right;
+  transform: translateX(-100%); }
+
+/* Slide the panel to the right out of the container */
+.curtain_right {
+        color: #fff;
+    text-align:left;
+  transform: translateX(100%); }
+
+/*---------------------curtain animation--------------*/
+.curtain_panel {
+  background: #F2691A;
+  width: 50%;   /* Each panel takes up half the container */
+  height: 100vh;
+  /* Used for demo purposes */
+  float: left;
+  /* Makes sure panels are side-by-side */
+  position: relative;
+  /* Needed to define the z-index */
+  z-index: 2;
+  /* Places the panels in front of the prize */
+  transition: all 1s ease-out;
+  /* Animates the sliding transition */
+}
+
+/*------------------------curtain prize-----------------*/
+.curtain_welcome {
+  background: #247BA0;
+  color: #fff;
+    position: absolute;
+  text-align: center;
+  padding: 1rem 0;
+  z-index: 1;
+  width: 100%; 
+
+
+}
+
