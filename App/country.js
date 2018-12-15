@@ -5,14 +5,20 @@ function myFunction() {
                
         text="https://restcountries.eu/rest/v2/name/";
         text+=x;
- 
+    
+
+    /*-----remove list for more input countries-----*/
     
     var list = document.getElementById("root");
     while (list.hasChildNodes()) {
         list.removeChild(list.firstChild);
     }
     
+    /*------removes the inputCountry Id-----*/
+    var inptCountry = document.getElementById("inputCountry");
+    var rqst = document.getElementById("requestCountry");
     
+    inptCountry.removeChild(rqst);
     /*----------------*/
              
 
@@ -36,23 +42,12 @@ request.onload = function () {
       const card = document.createElement('div');
       card.setAttribute('class', 'card');
 
-      const h3 = document.createElement('h3');
-      h3.textContent = movie.name;
-        
-        const p1 = document.createElement('p');
-        p1.textContent = movie.alpha2Code;
-        const p2 = document.createElement('p');
-        p2.textContent = movie.subregion;
-        const p3 = document.createElement('p');
-        p3.textContent = movie.capital;
+     
+    /*---Country flag is called from JSON---*/    
        const logo = document.createElement('img');
         logo.src = movie.flag;
-
+        
         container.appendChild(card);
-        card.appendChild(h3);
-        card.appendChild(p1);
-        card.appendChild(p2);
-        card.appendChild(p3);
         card.appendChild(logo);
     });
   } else {
@@ -63,5 +58,9 @@ request.onload = function () {
 }
 
 request.send();
+    
+    /*-----DOM Manipulation----*/
+    var tit= document.getElementsByClassName("center");
+    tit[0].style.background= "#F2691A";
     
 }
