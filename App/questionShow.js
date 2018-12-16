@@ -146,7 +146,7 @@ function Quiz(options) {
     }
     if (!answered && !elem.getElementsByClassName('warning')[0]) {
       var warning = document.createElement('span');
-      warning.textContent = "Answer the question before you proceed, please.";
+      warning.textContent = "Insert an answer, please.";
       warning.classList.add('warning');
 
       elem.appendChild(warning);
@@ -175,9 +175,9 @@ function Quiz(options) {
       elem.removeChild(questions[current_number]);
       var result = document.createElement('p');
       if (correct_answers === 0) {
-        result.textContent = "Thank you for taking this quiz! Sorry, but none of your answers were right :( Try again if you want to improve your score.";
+        result.textContent = " Sorry, but none of your answers were right :( ";
       } else {
-        result.textContent = "Thank you for taking this quiz! Your final score is: " + correct_answers + " correct answers!";
+        result.textContent = "Your score is: " + correct_answers + " correct answers!";
       }
       elem.appendChild(result);
     }
