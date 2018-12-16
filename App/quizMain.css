@@ -1,6 +1,6 @@
 body {
     font-family: 'Rajdhani', sans-serif;
-    font-size: 2em;
+    font-size: 2.5em;
     background: #F2691A;
 }
 
@@ -13,13 +13,17 @@ h1 {
 }
 
 img{
-    height: 100px;
+    height: 150px;
     width: auto;
 }
 /*----------First screen App-----------------*/
 .center {
+    
+    display: grid;
+  grid-template-columns: auto;
+    
   margin: auto;
-  width: 80%;
+  width: 90%;
     border-radius: 5px;
     background: #fff;
     padding: 10px;
@@ -52,9 +56,9 @@ button{
 
 
 .container {
-  margin: 5em;
+  margin: 2em;
   animation: 3s infinite beat;
-
+    
 }
 
 @keyframes beat {
