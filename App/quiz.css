@@ -1,0 +1,41 @@
+body {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2.5em;
+    background: #9DD9D2;
+}
+
+h1 {
+    text-align: center;
+}
+
+ ul {
+  list-style: none;
+}
+
+img{
+    height: 150px;
+    width: auto;
+}
+/*----------First screen App-----------------*/
+
+
+
+
+button{
+    margin: 10px;
+    background: #F2691A;
+    border-radius: 50px 0px;
+    padding: 10px 30px;
+    color:  #9DD9D2;
+    box-shadow:2px 2px 1px #F2691A; 
+}
+
+
+
+/*-------------- Question  ---------------*/
+
+#question{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.7em;
+    background: #9DD9D2
+}

@@ -36,11 +36,12 @@ img{
 }
 
 #numb{
+    font-size: 0.3em;
     background-color: white;
     border: none;
     border-bottom: 1px solid #F2691A;
-    height: 3.5em;
-    width:  200px;
+    height: 4.5em;
+    width:  70%;
 }
 
 button{
@@ -76,3 +77,6 @@ button{
   }
  
 }
+
+
+

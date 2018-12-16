@@ -1,43 +1,6 @@
-var getJSON = function(url, callback) {
-
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', url, true);
-    xhr.responseType = 'json';
-    
-    xhr.onload = function() {
-    
-        var status = xhr.status;
-        
-        if (status == 200) {
-            callback(null, xhr.response);
-        } else {
-            callback(status);
-        }
-    };
-    
-    xhr.send();
-}
-
-getJSON('https://huairanimrod.github.io/cit261/App/test.json',  function(err, data) {
-    
-    if (err != null) {
-        console.error(err);
-    } else {
-        
-        var text = `Date: ${data.date}
-Time: ${data.time}
-Unix time: ${data.milliseconds_since_epoch}`
-    
-        alert(text);
-    }
-})
-
 
   
-
-
-/*
-    
+  /*JSON implementation  
    var section = document.querySelector('section');
         
     /*----Obtaining the JSON-----
@@ -53,29 +16,32 @@ Unix time: ${data.milliseconds_since_epoch}`
           alert(Cars[0]);
         }
 
-   
+   */
    
   
-  /*
 var allQuestions = [{
-  question: "Who is Prime Minister of the United Kingdom?",
-  choices: ["David Cameron", "Gordon Brown", "Winston Churchill", "Tony Blair"],
+  question: "Who is the author of 'One Hundred Years of Solitude'?",
+  choices: ["Garcia Marquez", "William Shakespeare", "Vargas LLosa", "Isabelle Allende"],
   correctAnswer: 0
 }, {
-  question: "Who is Genry?",
-  choices: ["PTERODACTEL", "Gipsy", "Viktor Prit", "Everything."],
+  question: "Who is known as the king of dinosaurs.?",
+  choices: ["Triceratops", "Velociraptor", "Stegosaurus", "Tyrannosaurus Rex"],
   correctAnswer: 3
 }, {
-  question: "Who is Viktor Prit?",
-  choices: ["Genry", "Man of Action", "Gay Lord", "Buryak"],
-  correctAnswer: 1
-}, {
-  question: "Where is the Pterodactel?",
-  choices: ["In da Kirillovka", "At Genry's place", "In Michael Circle's coffin"],
+  question: "In what city does Bruce Wayne live?",
+  choices: ["Hell's Kitchen", "Gotham", "Metropolis", "Lima"],
   correctAnswer: 1
 }];
 
-[]
+/*------- Create new quiz---------*/
+var quiz = new Quiz({
+  elem: document.getElementById('quiz'),
+  questions: allQuestions
+});
+
+
+/*-------Populate quiz-------*/
+
 function Quiz(options) {
   var elem = options.elem;
   var allQuestions = options.questions;
@@ -91,13 +57,15 @@ function Quiz(options) {
   
   initQuiz();
 
+/*-----DOM Manipulation and local store------*/    
+    
   function generateQuestions(q) {
     for (var i = 0; i < q_number; i++) {
       var question = document.createElement('div');
       question.classList.add('question');
       question.id = 'question';
 
-      var title = document.createElement('h1');
+      var title = document.createElement('h2');
       title.textContent = q[i].question;
 
       question.appendChild(title);
@@ -216,8 +184,5 @@ function Quiz(options) {
   }
 }
 
-var quiz = new Quiz({
-  elem: document.getElementById('quiz'),
-  questions: allQuestions
-});
-  */
+
+  
